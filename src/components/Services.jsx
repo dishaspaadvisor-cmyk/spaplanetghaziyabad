@@ -6,37 +6,37 @@ import { SITE } from "@/lib/siteConfig";
 const services = [
   {
     title: "Jacuzzi Massage",
-    image: "/services/1.jpg",
+    image: "/services/ser1.png",
     description:
       "Complete body relaxation therapy designed to reduce stress and improve circulation.",
   },
   {
     title: "Thai Massage",
-    image: "/services/2.jpg",
+    image: "/services/ser2.png",
     description:
       "Traditional Thai techniques to improve flexibility and restore body balance.",
   },
   {
     title: "Deep Tissue Massage",
-    image: "/services/3.jpg",
+    image: "/services/ser3.png",
     description:
       "Focused pressure therapy that targets deep muscle tension and soreness.",
   },
   {
     title: "Hot Oil Massage",
-    image: "/services/4.jpg",
+    image: "/services/ser4.png",
     description:
       "Warm aromatic oils nourish the skin while providing complete relaxation.",
   },
   {
     title: "Swedish Massage",
-    image: "/services/5.jpg",
+    image: "/services/ser5.png",
     description:
       "Gentle and soothing massage that improves circulation and wellness.",
   },
   {
     title: "Couple Massage",
-    image: "/services/6.jpg",
+    image: "/services/ser6.png",
     description:
       "Luxury spa experience designed for couples seeking relaxation together.",
   },

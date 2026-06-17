@@ -12,13 +12,13 @@ import "swiper/css/pagination";
 const slides = [
   {
     image: "/hero/hero1.png",
-    title: "Premium Spa & Massage",
+    title: "Best Spa Available in Ghaziabad",
     description:
       "Experience luxury wellness therapies, professional massage services, and complete relaxation at Spa Planet Ghaziabad.",
   },
   {
     image: "/hero/hero2.png",
-    title: "Complete Wellness Experience",
+    title: "Expert Staff Available",
     description:
       "Refresh your body, calm your mind, and restore your energy with our premium spa treatments and expert therapists.",
   },
@@ -26,7 +26,7 @@ const slides = [
 
 export default function HeroSection() {
   return (
-    <section className="relative h-screen min-h-[700px] overflow-hidden">
+    <section className="relative h-[450px] overflow-hidden sm:h-[500px] md:h-[600px]">
       <Swiper
         modules={[Autoplay, EffectFade, Pagination]}
         effect="fade"
@@ -40,7 +40,7 @@ export default function HeroSection() {
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <div className="relative h-screen min-h-[700px]">
+            <div className="relative h-[450px] overflow-hidden sm:h-[500px] md:h-[600px]">
               {/* Background */}
               <Image
                 src={slide.image}
@@ -54,15 +54,15 @@ export default function HeroSection() {
               <div className="absolute inset-0 bg-black/40" />
 
               {/* Content */}
-              <div className="absolute inset-0 flex items-center justify-center px-6 -mt-20 md:-mt-24">
+              <div className="absolute inset-0 flex items-center justify-center px-6 -mt-20 md:-mt-16">
                 <div className="max-w-4xl text-center text-white">
                   {/* Badge */}
                   <span
-                    className="inline-flex rounded-full border px-5 py-2 text-sm font-medium uppercase tracking-[0.25em] backdrop-blur-md"
+                    className="inline-flex rounded-full border px-5 py-2 -mt-100 text-sm font-medium uppercase tracking-[0.25em] backdrop-blur-md"
                     style={{
                       borderColor: SITE.brand,
-                      color: SITE.brand,
-                      backgroundColor: "rgba(0,0,0,0.25)",
+                      color: "white",
+                      backgroundColor: "rgba(6, 7, 6, 0.25)",
                     }}
                   >
                     Spa Planet Ghaziabad
@@ -79,10 +79,7 @@ export default function HeroSection() {
                     style={{ backgroundColor: SITE.brand }}
                   />
 
-                  {/* Description */}
-                  <p className="mx-auto mt-8 max-w-3xl text-lg leading-9 text-gray-200 md:text-xl">
-                    {slide.description}
-                  </p>
+  
 
                   {/* Buttons */}
                   <div className="mt-10 flex flex-wrap justify-center gap-4">
