@@ -28,7 +28,7 @@ export default function Footer() {
             </h3>
 
             <p className="leading-8 text-black">
-              Premium spa and wellness experience inRajnagarGhaziabad UP.
+              Premium spa and wellness experience in Rajnagar Ghaziabad UP.
               Enjoy luxury massage therapies, peaceful ambience, professional
               care, and complete relaxation.
             </p>
