@@ -84,7 +84,7 @@ export default function AboutSection() {
             <div className="relative overflow-hidden rounded-[32px] bg-white shadow-2xl">
               <div className="relative h-[420px] md:h-[520px]">
                 <Image
-                  src="/services/6.jpg"
+                  src="/services/ser5.png"
                   alt="Spa Planet Ghaziabad"
                   fill
                   className="object-cover transition duration-700 hover:scale-105"
