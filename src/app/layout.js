@@ -33,6 +33,7 @@ export default function RootLayout({ children }) {
       <head>
         <meta name="google-site-verification" content="N2nbfZs4-tQNAQfsIf2j5W_5CDfj-IJgm3nS1SUHqO8" />
       </head>
+
       <body className="min-h-full flex flex-col">
         <Navbar />
         <main className="flex-1">{children}</main>

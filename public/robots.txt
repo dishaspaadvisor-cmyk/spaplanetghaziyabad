@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://www.spaplanetghaziabad.in//sitemap.xml
+Sitemap: https://www.spaplanetghaziabad.in/sitemap.xml
 
 # Google
 User-agent: Googlebot
