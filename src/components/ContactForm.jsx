@@ -96,11 +96,11 @@ ${form.message}
                     </h3>
 
                     <p className="mt-2 leading-7 text-slate-600">
-                      Spa Planet Ghaziabad
+                      Shop No. 201, Second Floor, D-30 Building,
                       <br />
-                      Premium Wellness & Spa Center
+                      Opposite Gaur Mall, Above Starbucks
                       <br />
-                      Ghaziabad, Maharashtra
+                      Rajnagar Ghaziabad, Uttar Pradesh
                     </p>
                   </div>
                 </div>
