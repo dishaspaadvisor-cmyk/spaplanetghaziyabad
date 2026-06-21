@@ -34,6 +34,9 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+
+
+
       <body className="min-h-full flex flex-col">
         {/* Google Ads Conversion Tracking */}
         <Script
@@ -49,6 +52,17 @@ export default function RootLayout({ children }) {
             gtag('config', 'AW-18259304293');
           `}
         </Script>
+        <Script id="google-conversion" strategy="afterInteractive">
+          {`
+    gtag('event', 'conversion', {
+      'send_to': 'AW-18259304293/mhxmCNz9g8McEOW-24JE',
+      'value': 1.0,
+      'currency': 'INR',
+      'transaction_id': ''
+    });
+  `}
+        </Script>
+
 
         <Navbar />
         <main className="flex-1">{children}</main>
