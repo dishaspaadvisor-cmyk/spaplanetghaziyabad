@@ -39,13 +39,13 @@ export default function RootLayout({ children }) {
       </head>
 
       <body className="min-h-full flex flex-col">
-        {/* Google Tag Manager */}
+        {/* Google Ads Global Tag */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-18253308770"
           strategy="afterInteractive"
         />
 
-        <Script id="google-ads" strategy="afterInteractive">
+        <Script id="google-ads-config" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
 
@@ -57,6 +57,41 @@ export default function RootLayout({ children }) {
 
             gtag('js', new Date());
             gtag('config', 'AW-18253308770');
+          `}
+        </Script>
+
+        {/* Purchase Conversion Event */}
+        <Script id="purchase-conversion" strategy="afterInteractive">
+          {`
+            gtag('event', 'conversion', {
+              'send_to': 'AW-18253308770/_nsOCID9gcIcEOLG7f9D',
+              'value': 1.0,
+              'currency': 'INR',
+              'transaction_id': ''
+            });
+          `}
+        </Script>
+
+        {/* Global Conversion Function */}
+        <Script id="gtag-report-conversion" strategy="afterInteractive">
+          {`
+            window.gtag_report_conversion = function(url) {
+              var callback = function() {
+                if (typeof(url) !== 'undefined') {
+                  window.location = url;
+                }
+              };
+
+              gtag('event', 'conversion', {
+                'send_to': 'AW-18253308770/_nsOCID9gcIcEOLG7f9D',
+                'value': 1.0,
+                'currency': 'INR',
+                'transaction_id': '',
+                'event_callback': callback
+              });
+
+              return false;
+            };
           `}
         </Script>
 
