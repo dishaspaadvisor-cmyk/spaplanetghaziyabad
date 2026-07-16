@@ -98,6 +98,18 @@ export default function RootLayout({ children }) {
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
+        <Script id="bookingbot-loader" strategy="afterInteractive">
+  {`
+    (function () {
+      const spaId = "519";
+      const script = document.createElement("script");
+      script.src = "https://chatbot.bookingbot.in/bot.js?spa=" + spaId;
+      script.async = true;
+      script.setAttribute("data-spa", spaId);
+      document.body.appendChild(script);
+    })();
+  `}
+</Script>
         <FloatingButton />
       </body>
     </html>
